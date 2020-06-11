@@ -1,3 +1,9 @@
+.mynew {
+  background-color: tomato;
+  color: black;
+  text-align: center;
+}
+
 .App {
   text-align: center;
 }
