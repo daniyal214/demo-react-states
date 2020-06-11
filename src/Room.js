@@ -6,25 +6,18 @@ function Room() {
     // const[isLit, setLit] = useState(true);
     let [isLit, setLit] = useState(!true);
     // console.log("State = ", state);
-    let [age, setAge] = useState(23);
+    let [age, setAge] = useState(1);
 
 
         //const updateAge = 
 
   return (
-    <div>
-        This Room is {isLit? "Lit" : "Dark"}
+    <div className={`room ${isLit ? "Lit" : "Dark"}`}> <br/><br/><br/>
+        It is now {isLit? "Morning" : "Night"}
       <br/>
-      <button onClick = { () => {
-        console.log("Button Clicked");
-        setLit(!isLit);
-        
-}}> Toggle Light </button>
-      <br/>
-      <button onClick = {() => {
-        console.log("Increase Age in Button Clicked");
-        setAge(++age);
-}}> Increase Age </button>
+      <button onClick = { () => setLit(!isLit)}> Change Day Light </button>
+      <br/><br/><hr />
+      <button onClick = {() => setAge(++age)}> Increase Date </button>
       Age : {age}
     </div>
   );

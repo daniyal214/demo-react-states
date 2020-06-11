@@ -1,4 +1,15 @@
-.myupdate {
-    text-align: center;
-    background-color: aqua;
+.room {
+    height: 100vh;
 }
+
+.Lit {
+    background-color: yellow;
+    color: black;
+    text-align: center;
+}
+
+.Dark {
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
